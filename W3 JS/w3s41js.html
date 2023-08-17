@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS hosting</title>
+</head>
+<body>
+    <h2>with Let you cannot use before its declared</h2>
+    <script>
+        try {
+            carName = " volvo"
+            let carName = "saab"
+        }
+        catch(err) {
+            document.write(carName)
+        }
+    </script>
+</body>
+</html>
