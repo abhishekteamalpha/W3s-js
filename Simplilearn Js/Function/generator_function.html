@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENERATOR FUNCTION</title>
+</head>
+<body>
+    <h2>
+        GENERATOR FUNCTION
+    </h2>
+    <p id="demo"></p>
+    <script>
+        function* generateSequence() {
+            // yield is a keyword
+            yield 1 
+            yield 2 
+            return 3
+        }
+        let generator = generateSequence()
+        let one = generator.next()
+        let two = generator.next()
+        let three = generator.next()
+// JSON.stringify() converts an objects into string
+        alert(JSON.stringify(one))
+        alert(JSON.stringify(two))
+        alert(JSON.stringify(three))
+    </script>
+</body>
+</html>

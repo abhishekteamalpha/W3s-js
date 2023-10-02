@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS OBJECT</title>
+</head>
+<body>
+    <H1>JS OBJECT</H1>
+    <h3>creating a object</h3>
+    <p id="demo"></p>
+    <script>
+        // creating an object using literal
+        var student = {
+            name:"abhishek",
+            age: 20,
+            marks : 90
+        }
+        document.getElementById("demo").innerHTML = student.name + " of age " + student.age + " get scored by marks " + student.marks
+    </script>
+
+    <!-- creating an object using  new -->
+    <script>
+        var student = new Object()
+        student.name = "abhishek"
+        student.age = 20    
+        student.marks = 90
+        document.getElementById("demo").innerHTML = student.name + " of age " + student.age + " get scored by marks " + student.marks
+        
+    </script>
+<!-- creating an object using constructor -->
+    <script>
+         function stud(name , age , marks){
+             this.name = name; 
+            this.age = age;
+            this.marks = marks
+         }
+         var student = stud("abhishek" , 20 , 90)
+         document.getElementById("demo").innerHTML = student.name + " of age " + student.age + " get scored by marks " + student.marks
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCTION AS OBJECTS</title>
+</head>
+<body>
+    <h2>FUNCTION AS OBJECTS</h2>
+    <p id="demo"></p>
+    <script>
+        // to find the area of circle
+        // Math.PI is the syntax for the value of pi
+        var body = "return Math.PI * rad *rad "
+        var circle = new Function("rad", body)
+        alert (circle(5))
+    </script>
+
+    <script>
+        document.getElementById("demo").innerHTML = Math.PI
+    </script>
+</body>
+</html>

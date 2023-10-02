@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCTION WITH RETURN VALUE</title>
+</head>
+<body>
+    <H2>FUNCTION WITH RETURN VALUE</H2>
+    <script>
+        function myName(fname, lname) {
+            var a = fname + " " + lname
+            return a
+        }
+        var fn = myName("Abhihshek" , "gupta")
+        document.write(fn)
+        document.write("<br>")
+
+
+        function sum(math,eng,hindi){
+            var s = math + eng + hindi
+            return s
+        }
+        function percentage(t){
+            var  per = t/300*100
+            document.write (per)
+            document.write ("<br>")
+        }
+        var total = sum (50,50,50)
+       percentage(total)
+
+
+       function per(hindi,eng,math) {
+        var percentage = (hindi + eng + math)/300 * 100
+        return percentage
+       }
+       var per = per(50,100,50)
+       document.write(per)
+
+    </script>
+</body>
+</html>

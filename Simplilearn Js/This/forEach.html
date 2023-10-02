@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+</head>
+<body>
+    <script>
+        const random = {
+            name : "Tutorial ",
+            video : ["js", "this" ,"keyword"],
+            info(){
+                this.video.forEach(function(tag){
+                    console.log(this.name ,tag)
+                },this)
+            }
+        }
+        random.info()
+    </script>
+</body>
+</html>

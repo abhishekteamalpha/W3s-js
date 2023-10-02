@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT PROPERTIES</title>
+</head>
+<body>
+    <H1>OBJECT PROPERTIES</H1>
+    <p id="demo"></p>
+    <script>
+        var student = {
+            name: "abhishek",
+            age: 25,
+            marks : 95
+        }
+        // first way to change the property
+        student.age = 236
+        document.getElementById("demo").innerHTML =  student.name + " of age " + student.age + " get scored by marks " + student.marks
+    
+        // second way to change the property
+        
+        x = student.age
+        
+        document.getElementById("demo").innerHTML =  student.name + " of age " + x + " get scored by marks " + student.marks
+
+        // third way to change the property
+
+        x = "age"
+        document.getElementById("demo").innerHTML =  student.name + " of age " + student[x] + " get scored by marks " + student.marks
+
+    </script>
+</body>
+</html>

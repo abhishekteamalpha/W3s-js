@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NESTED PROMISES</title>
+</head>
+<body>
+    <h2>
+        NESTED PROMISES
+    </h2>
+    <script>
+        let empty_tank = function(){
+            return new Promise(function(resolve,reject){
+                resolve("the car dosent have enough fuel")
+            })
+        }
+        let engine = function(msg){
+           return new Promise(function(resolve,reject){
+                resolve(msg + "the engine is overheating")
+            })
+        }
+        let travel = function(msg){
+           return new Promise(function(resolve,reject){
+                resolve(msg +"the car is not safe for travelling")
+            })
+        }
+
+        empty_tank().then(function(result){
+            return engine(result)
+        })
+        .then(function(result){
+            return travel(result)
+        })
+        .then (function(result){
+            console.log("done!" + result)
+        })
+    </script>
+</body>
+</html>

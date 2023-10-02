@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local and global variable</title>
+</head>
+<body>
+    <h2><b>local and global variable</b></h2>
+    <script>
+        var a = 10
+        function abhi() {
+            var b = 20
+            document.write(a + "<br>")
+            document.write(b + "<br>")
+        }
+        abhi()
+        // a is global so it can be print anywhere
+        // but b is a local variable so it can be print only in function
+        document.write(b)
+        console.log(a)
+    </script>
+</body>
+</html>

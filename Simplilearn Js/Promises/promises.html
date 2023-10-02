@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+
+<body>
+    <h2>Promises</h2>
+    <p id="demo"></p>
+    <script>
+        let car = new Promise(function (resolve, reject) {
+            fuel_fullTank = true
+            if (fuel_fullTank)
+                resolve()
+            else
+                reject()
+        })
+        car.then(function(){
+            document.write("car tank is full, happy driving")
+        })
+        car.catch(function(){
+            document.write("car tank is empty, better to stop")
+       
+        })
+
+    </script>
+</body>
+
+</html>

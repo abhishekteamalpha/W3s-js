@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript function</title>
+</head>
+<body>
+    <h2>invoke a fucntion to convert farenhiet into celsius</h2>
+    <p id="demo"></p>
+    <script>
+        function toCelsius(f) {
+            return (5/9) * (f-32)
+        }
+        // let value = toCelsius(77)
+        document.getElementById("demo").innerHTML = toCelsius(80)
+    </script>
+</body>
+</html>

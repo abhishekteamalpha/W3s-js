@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+</head>
+<body>
+    <h2>ARRAY</h2>
+    <p id="demo"></p>
+    <script>
+        let cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+        document.getElementById("demo").innerHTML = cars;
+// selecting elements in array
+        let BMW = cars[2]
+        document.getElementById("demo").innerHTML = BMW;
+
+        // calculating length of aray
+        let len = cars.length
+        document.getElementById("demo").innerHTML = len;
+
+        // to find last array item
+        let last = cars[cars.length - 1]
+        document.getElementById("demo").innerHTML = last;
+
+        // to loop over an array item
+        cars.forEach((item,index,array) => {console.log(item,index)})
+
+        // to convert array into string
+        document.getElementById("demo").innerHTML = cars.toString();
+
+        // to remove an last item from array
+        document.getElementById("demo").innerHTML = cars.pop();
+
+        // to push or add a new element to array
+        cars.push("cycle")
+        document.getElementById("demo").innerHTML =cars;
+
+        // to remove the first element from array using shift()
+        cars.shift()
+        document.getElementById("demo").innerHTML =cars;
+
+        // to add an element at the begining of an array
+        cars.unshift("first")
+        document.getElementById("demo").innerHTML =cars;
+
+        // to merge two different array
+        let bikes = ["yamha","hero","activa","bajaj"]
+        let vehicles = cars.concat(bikes)
+        document.getElementById("demo").innerHTML = vehicles;
+
+        // to sort an array in ascending order using sort()
+        vehicles.sort()
+        document.getElementById("demo").innerHTML = vehicles
+
+        // to reverse the elements of an array
+        vehicles.reverse()
+        document.getElementById("demo").innerHTML = vehicles
+
+        // MAP array
+        let num1 = [2,4,6,8,10]
+        let num2 = num1.map(multiply)
+        function multiply(value){
+            return value * 2
+        }
+        document.getElementById("demo").innerHTML = num2
+
+        // FILTER array
+        num3 = num2.filter(comp)
+        function comp(value){
+            return value>6
+        }
+        document.getElementById("demo").innerHTML = num3
+
+        // REDUCE array
+        let num4 = num1.reduce(sum)
+        function sum(total,values){
+            return total + values
+        }
+        document.getElementById("demo").innerHTML = num4
+
+        
+
+    </script>
+</body>
+</html>

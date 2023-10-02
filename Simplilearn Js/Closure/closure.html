@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOSURE</title>
+</head>
+
+<body>
+    <h2>CLOSURE</h2>
+    <p id="demo"></p>
+    <script>
+        // global variable
+        var a = 10
+        function first_func() {
+            // local variable
+            var b = 20
+            function second_func() {
+                var c = a + b
+                return c
+            }
+            return second_func()
+        }
+        var sum = first_func()
+        document.getElementById("demo").innerHTML = sum
+
+    </Script>
+</body>
+
+</html>

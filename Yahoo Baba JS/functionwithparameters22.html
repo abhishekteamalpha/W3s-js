@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCTION WITH PARAMETERS</title>
+</head>
+<body>
+    <script>
+        // an example to use function with parameters
+        function name(fname, lname) {
+            document.write( fname + lname + "hello " )
+        }
+        // name(10, 20)
+        /*name("abhishek ", "gupta")
+        name("abhishek ", "gupta") */
+        // if you do not give a value then it will take as undefned value
+        name("abhishek ","gupta")
+// if you want to give bydefault value
+        function name(fname = "hello", lname = "hello") {
+            document.write( fname + lname + "hello " + "<br>")
+        }
+        name("abhishek ", "gupta")
+        name()
+    </script>
+</body>
+</html>

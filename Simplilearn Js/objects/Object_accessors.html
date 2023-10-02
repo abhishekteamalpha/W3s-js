@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT ACCESSORS</title>
+</head>
+<body>
+    <H2>OBJECT ACCESSORS</H2>
+    <p id="demo"></p>
+    <!-- getter accessor -->
+    <script>
+        var car = {
+            model : "Audi",
+            color : "Black",
+            year : 2020,
+            get build(){
+                return this.year
+            }
+        }
+        document.getElementById("demo").innerHTML = car.build
+        </script>
+
+        <!-- setter accessor -->
+        <script>
+        var car = {
+            model : "bmw",
+            color : "Black",
+            year_made : "",
+            set year(year){
+                this.year_made = year
+            }
+        }
+        car.year = 2020
+        document.getElementById("demo").innerHTML = car.year_made
+    </script>
+</body>
+</html>
